@@ -56,6 +56,22 @@
               "target": "Package",
               "version": "[3.0.0-preview3-19153-02, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0-preview3.19153.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.0.0-preview3.19153.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQLite": {
+              "target": "Package",
+              "version": "[3.0.0-preview3.19153.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[3.0.0-preview3-27503-5, )"
+            },
             "Microsoft.NETCore.App.Ref": {
               "include": "None",
               "suppressParent": "All",
@@ -68,6 +84,10 @@
               "target": "Package",
               "version": "[3.0.0-preview3.19128.7, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
             },
             "Microsoft.WindowsDesktop.App": {
               "include": "None",

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -32,7 +33,7 @@ namespace RazorPagesMovie
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddDbContext<RazorPagesMovie.Models.RazorPagesMovieContext>(options => options.UseSqlite(Configuration.GetConnectionString("MovieContext")));
             services.AddMvc()
                 .AddNewtonsoftJson();
         }
