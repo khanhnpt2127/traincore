@@ -10,7 +10,7 @@ namespace RazorPagesMovie.Models
         {
         }
 
-        public DbSet<RazorPagesMovie.Models.Movies> Movie { get; set; }
+        public DbSet<RazorPagesMovie.Models.Movie> Movie { get; set; }
         
     }
 }

@@ -36,6 +36,9 @@ namespace RazorPagesMovie
             services.AddDbContext<RazorPagesMovie.Models.RazorPagesMovieContext>(options => options.UseSqlite(Configuration.GetConnectionString("MovieContext")));
             services.AddMvc()
                 .AddNewtonsoftJson();
+
+            services.AddDbContext<MvcMovieContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
